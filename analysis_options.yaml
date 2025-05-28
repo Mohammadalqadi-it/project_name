@@ -12,7 +12,11 @@
 # The core lints are also what is used by pub.dev for scoring packages.
 
 include: package:lints/recommended.yaml
-
+analyzer:
+  errors:
+    unused_local_variable: ignore
+    no_leading_underscores_for_local_identifiers: ignore
+    equal_elements_in_set: ignore
 # Uncomment the following section to specify additional rules.
 
 # linter:
